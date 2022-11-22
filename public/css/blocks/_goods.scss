@@ -1,0 +1,144 @@
+.goods{
+    margin-bottom: 128px;
+}
+.good-pic-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.good-pic{
+    position: relative;
+    background-color: #F7F7F7;
+    width: 100%;
+    padding-bottom: $shift;
+}
+.switch-pic-button{
+    position: absolute;
+    color: #000000;
+    background-color: transparent;
+    border: none;
+    background: rgba(42, 42, 42, 0.15);
+    padding: 12px 17px;
+    transition: color 0.3s, transform 0.3s;
+    &-right{
+        right: 0;
+    }
+    &-left{
+        left: 0;
+    }
+    &:hover{
+        color: $main-color;
+        transform: scale(2);
+    }
+}
+.good-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #EAEAEA;
+    padding: $shift 0;
+    margin-top: - $shift;
+    text-align: center;
+    background-color: #ffffff;
+    position: sticky;
+}
+.good-name{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-color;
+    &:after{
+        content:'';
+        display: block; margin: 0 auto;
+        width: 50%; height: 3px;
+        background-color: $main-color;
+        margin-top: 15px;
+        margin-bottom: 16px;
+    }
+}
+.good-tagline{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #4D4D4D;
+}
+.good-info{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #5E5E5E;
+    margin: 48px 0 32px 0;
+    width: 50%;
+}
+.good-price{
+    width: 100%;
+    display: block;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #EF5B70;
+    &:after{
+        content:'';
+        display: block;
+        width: 70%; height: 2px;
+        background-color: #EAEAEA;
+        margin: 65px auto;
+    }
+}
+.cart-icon{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-color;
+    border: 1px solid $main-color;
+    display: inline-block;
+    padding: 15px 57px 15px 24px;
+    margin-top: 48px;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover{
+        background-color: $main-color;
+        color: #F8F8F8;
+    }
+}
+@media (max-width: 1150px){
+    .good-pic-wrapper{
+        justify-content: center;
+        position: relative;
+    }
+    .good-text{
+        padding: 64px 0px;
+        margin-top: 0px;
+    }
+    .switch-pic-button{
+        position: absolute;
+        &-right{
+            right: 0;
+        }
+        &-left{
+            left: 0;
+        }
+    }
+}
+@media (max-width: 750px)
+{
+    .good-info{
+        line-height: 20px;
+    }
+    .good-price{
+        line-height: 31px;
+    }
+    .good-price{
+        &:after{
+            width: 50%;
+            margin: 32px auto 49px;
+        }
+    }
+}
+@media (max-width: 600px){
+    .good-picture{
+        width: 374px;
+        height: 454px;
+    }
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2ed3a784d.js" crossorigin="anonymous"></script>
+    <title>Cart</title>
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper header-wrap">
+            <div class="header-col-1">
+                <a href="indext.html" class="logo-link">
+                    <img src="img/logo.svg" alt="logo">
+                </a>
+                <button class="search-button">
+                    <img src="img/search-pic.svg" alt="search-pic">
+                </button>
+            </div>
+            <div class="header-col-2">
+                <button class="main-menu-button">
+                    <img src="img/menu-1.png" alt="menu">
+                </button>
+                <a href="registration.html" class="registry-link">
+                    <img src="img/menu-2.svg" alt="menu">
+                </a>
+                <a href="#" class="cart-link">
+                    <img src="img/menu-3.svg" alt="menu">
+                    <div class="CartAmount"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="breadcrump">
+            <div class="wrapper breadcrump-wrap">
+                    <h1 class="breadcrump-heading">SHOPPING CART</h1>
+            </div>
+        </section>
+        <section class="cart-block">
+            <h2 class="hidden">Корзина</h2>
+            <div class="wrapper cart-wrap">
+                <div>
+                    <ul class="cart-product-list">
+                        <li class="cart-product">
+                            <img src="img/product-2.jpg" alt="product-2" class="cart-product-img">
+                            <div class="cart-product-text">
+                                <p class="product-name">MANGO  PEOPLE<br>T-SHIRT</p>
+                                <p class="product-price">Price: <span class="price-color">$300</span></p>
+                                <p class="product-color">Color: Red</p>
+                                <p class="product-size">Size: Xl</p>
+                                <p class="product-quan">Quantity: <span class="cart-quan">2</span></p>
+                           </div>
+                           <button class="x-cart"><i class="fas fa-times"></i></button>
+                        </li>
+                        <li class="cart-product">
+                            <img src="img/product-3.jpg" alt="product-3" class="cart-product-img">
+                            <div class="cart-product-text">
+                                <p class="product-name">MANGO  PEOPLE<br>T-SHIRT</p>
+                                <p>Price: <span class="price-color">$300</span></p>
+                                <p>Color: Red</p>
+                                <p>Size: Xl</p>
+                                <p>Quantity: <span class="cart-quan">2</span></p>
+                           </div>
+                           <button class="x-cart"><i class="fas fa-times"></i></button>
+                        </li>
+                    </ul>
+                    <div class="cart-button">
+                        <button class="clear-cart-but">CLEAR SHOPPING CART</button>
+                        <a class="continue-cart-link" href="product.html">CONTINUE SHOPPING</a>
+                    </div>
+                </div>
+                <form class="cart-form" action="#">
+                    <div class="input-block">
+                        <p class="input-block-text">SHIPPING ADRESS</p>
+                        <input type="text" name="Contry" placeholder="Bangladesh" class="cart-input">
+                        <input type="text" name="State" placeholder="State" class="cart-input">
+                        <input type="text" name="Postcode" placeholder="Postcode / Zip" class="cart-input">
+                        <button class="quote-but">GET A QUOTE</button>
+                    </div>
+                    <div class="subbmit-block">
+                        <p class="sub-total">SUB TOTAL         $900</p>
+                        <p class="grand-total">GRAND TOTAL      <span class="grand-total-color">$900</span></p>
+                        <div class="cart-decorate">
+                            <button class="subbmit-block-but" type="submit">PROCEED TO CHECKOUT</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="hidden"><h2>Обратная связь</h2></div>
+            <div class="wrapper feedback-wrap">
+                <div class="feedback-col-1">
+                    <p class="feedback-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="italic">a pulvinar purus condimentum“</span></p>
+                </div>
+                <div class="feedback-col-2">
+                    <p class="input-text"><span class="subscribe">SUBSCRIBE </span><br>FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="form" action="#">
+                        <input class="useremail" type="email" placeholder="Enter Your Email">
+                        <button class="subbutton" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="wrapper footer-wrap">
+            <div class="copyright">
+                <p class="copy-text">© 2021  Brand  All Rights Reserved.</p>
+            </div>
+            <div class="social-networks">
+                <a href="#" class="network-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="network-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="network-link"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" class="network-link"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="src/main.js"></script>
+</body>
+</html>

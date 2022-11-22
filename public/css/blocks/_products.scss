@@ -1,0 +1,116 @@
+.products{
+    padding-bottom: 95px;
+}
+.product-heading{
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 36px;
+    color: #222222;
+    text-align: center;
+    margin-bottom: 17px;
+}
+.product-paragraph{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #9F9F9F;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.product-list{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+.product{
+    width: 360px;
+    background: #F8F8F8;
+    position: relative;
+    transition:transform 1s;
+}
+.product-text{
+    padding: 25px 28px 20px 16px;
+}
+.product-name{
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+.product-txt{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5D5D5D;
+    margin-bottom: 16px;
+}
+.product-cost{
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-color;
+}
+.center{
+    text-align: center;
+}
+.product-link{
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: $main-color;
+    border: 1px solid $main-color;
+    display: inline-block;
+    padding: 15px 39px;
+    margin-top: 48px;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover{
+        background-color: $main-color;
+        color: #F8F8F8;
+    }
+}
+.product-overlay{
+    background-color: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.add-btn{
+    @include button;
+    border: 1px solid #fff;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    fill: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    transition: background-color 0.3s, color 0.3s , fill 0.3s;
+    &:hover{
+        background-color: #fff;
+        color: #000;
+        fill: #000;
+    }
+}
+
+.product:hover .product-overlay{
+    opacity: 1;
+}
+.product:hover{
+    transform: scale(1.1);
+}
+@media (max-width: 400px){
+    .product:hover{
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,144 @@
+.reg-button{
+    @include button;
+}
+
+.registration{
+    padding: 64px 0 96px 0;
+}
+.reg-wrap{
+    display: flex;
+    justify-content: space-between;
+}
+.reg-form{
+    width: 360px;
+}
+.personality{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.reg-txt{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+}
+.reg-input{
+    height: 45px;
+    padding: 13px 0 16px 17px;
+    border: 1px solid #A4A4A4;
+    &::placeholder{
+        font-weight: 300;
+        font-size: 13px;
+        line-height: 16px;
+        color: #B1B1B1;
+    }
+}
+.radio{
+    display: flex;
+    align-items: center;
+    margin:32px 0;
+}
+.radio-label{
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 13px;
+    color: #000000;
+    margin-right: 20px;
+}
+.radio-input{
+    height: 17px;
+    width: 17px;
+    margin-right: 10px;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+.password-req{
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    color: #B1B1B1;
+    margin-bottom: 39px;
+}
+.reg-button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: 1px solid $main-color;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px; 
+    color: $main-color;
+    fill: $main-color;
+    padding: 16px 29px;
+    transition: background-color 0.3s, color 0.3s, fill 0.3s;
+    &:hover{
+        background-color: $main-color;
+        color: white;
+        fill: white;
+    }
+}
+.reg-features{
+    width: 55%;
+}
+.reg-features-header{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+}
+.reg-features-info{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin: 22px 0;
+}
+.loyalty-feature{
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+    margin-bottom: 16px;
+    &::before{
+        content: url(../img/check-mark.svg);
+        margin-right: 22px;
+    }
+}
+
+@media (max-width: 1100px){
+    .reg-features{
+        padding-left: 20px;
+    }
+    .reg-features-header{
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .reg-features-info{
+        font-size: 16px;
+        line-height: 19px;
+
+    }
+    .loyalty-feature{
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+@media (max-width: 760px){
+    .reg-wrap{
+        display: block;
+    }
+    .reg-features{
+        padding-left: 0px;
+        padding-top: 40px;
+        width: 100%;
+    }
+    .reg-form{
+        width: 330px;
+    }
+
+}

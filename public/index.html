@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a2ed3a784d.js" crossorigin="anonymous"></script>
+    <title>Main page</title>
+</head>
+<body>
+    <div id="app">
+        <header class="header">
+            <div class="wrapper header-wrap">
+                <div class="header-col-1">
+                    <a href="#" class="logo-link">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                    <button class="search-button">
+                        <img src="img/search-pic.svg" alt="search-pic">
+                    </button>
+                </div>
+                <div class="header-col-2">
+                    <button class="main-menu-button">
+                        <img src="img/menu-1.png" alt="menu">
+                    </button>
+                    <a href="registration.html" class="registry-link">
+                        <img src="img/menu-2.svg" alt="menu">
+                    </a>
+                    <cart ref="cart"></cart>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="promo">
+            <div class="wrapper promo-wrap">
+                <h1 class="promo-title">
+                    THE BRAND <br> 
+                    <span class="promo-title-small">OF LUXERIOUS <span class="promo-title-pink">FASHION</span></span>
+                </h1>
+            </div>
+        </section>
+        <div class="categories">
+            <div class="hidden"><h2>Категории товаров</h2></div>
+            <div class="wrapper categories-wrap">
+                <div class="categories-item categories-item-women">
+                    <p class="categories-sale">30% OFF</p>
+                    <p class="categories-name">FOR WOMEN</p>
+                </div>
+                <div class="categories-item categories-item-men">
+                    <p class="categories-sale">HOT DEAL</p>
+                    <p class="categories-name">FOR MEN</p>
+                </div>
+                <div class="categories-item categories-item-kids">
+                    <p class="categories-sale">NEW ARRIVALS</p>
+                    <p class="categories-name">FOR KIDS</p>
+                </div>
+                <div class="categories-item categories-item-acc">
+                    <p class="categories-sale">LUXIROUS & TRENDY</p>
+                    <p class="categories-name">ACCESORIES</p>
+                </div>
+            </div>
+        </div>
+        <section class="products">
+            <div class="wrapper products-wrap">
+                <h2 class="product-heading">Fetured Items</h2>
+                <p class="product-paragraph">Shop for items based on what we featured in this week</p>
+                <products ref="products"></products>
+                <div class="center">
+                <a href="catalog.html" class="product-link">Browse All Product</a>
+                </div>
+            </div>
+        </section>
+        <section class="feature">
+            <div class="hidden">
+                <h2>Приемущества компании</h2>
+            </div>
+            <div class="wrapper feature-wrap">
+                <div class="feature-add">
+                    <img src="img/feature-car.svg" alt="car">
+                    <h3 class="feature-heading">Free Delivery</h3>
+                    <p class="feature-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="feature-add">
+                    <img src="img/feature-disc.svg" alt="discount">
+                    <h3 class="feature-heading">Sales & discounts</h3>
+                    <p class="feature-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+                <div class="feature-add">
+                    <img src="img/feature-crown.svg" alt="crown">
+                    <h3 class="feature-heading">Quality assurance</h3>
+                    <p class="feature-text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
+                </div>
+            </div>
+        </section>
+        <section class="feedback">
+            <div class="hidden"><h2>Обратная связь</h2></div>
+            <div class="wrapper feedback-wrap">
+                <div class="feedback-col-1">
+                    <p class="feedback-text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi, <span class="italic">a pulvinar purus condimentum“</span></p>
+                </div>
+                <div class="feedback-col-2">
+                    <p class="input-text"><span class="subscribe">SUBSCRIBE </span><br>FOR OUR NEWLETTER AND PROMOTION</p>
+                    <form class="form" action="#">
+                        <input class="useremail" type="email" placeholder="Enter Your Email">
+                        <button class="subbutton" type="submit">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer class="footer">
+            <div class="wrapper footer-wrap">
+                <div class="copyright">
+                    <p class="copy-text">© 2021  Brand  All Rights Reserved.</p>
+                </div>
+                <div class="social-networks">
+                    <a href="#" class="network-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="network-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="network-link"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="network-link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/CartComponent.js"></script>
+    <script src="js/FilterComp.js"></script>
+    <script src="js/ProductComponent.js"></script>
+    <script src="js/ErrorComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

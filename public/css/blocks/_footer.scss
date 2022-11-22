@@ -1,0 +1,38 @@
+.footer{
+    background-color: rgb(0, 0, 0);
+    color: #FFF;
+}
+.footer-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.copy-text{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FBFBFB;
+}
+.social-networks{
+    margin: 24px 0;
+}
+.network-link{
+    color: #000;
+    text-decoration: none;
+    background-color: #FFF;
+    padding: 7px;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    &:hover{
+        background-color: $main-color;
+        color: #FFF;
+    }
+}
+.fa-facebook-f{
+    padding:0px 2px;
+}
+@media (max-width: 800px){
+    .footer-wrap{
+        flex-direction: column-reverse;
+    }
+}
