@@ -63,7 +63,7 @@ Vue.component('product', {
                 <div class="product-text">
                     <h3 class="product-name">{{product.product_name}}</h3>
                     <p class="product-txt">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <p class="product-cost">{{product.price}}</p>
+                    <p class="product-cost">{{product.price}}$</p>
                 </div>
             </li>
     `
