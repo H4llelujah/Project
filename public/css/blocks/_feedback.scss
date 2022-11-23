@@ -1,0 +1,130 @@
+.feedback{
+    background-color: #eee;
+    background-image: url(../img/feedback-bg.jpg);
+    background-size: cover;
+    padding-top: 96px-$wrapper-padding;
+    padding-bottom: 156px - $wrapper-padding;
+}
+.feedback-wrap{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+.feedback-col-1{
+    width:360px;
+    background-image: url(../img/feedback-pict.png);
+    background-repeat: no-repeat;
+    background-position-y: top;
+    background-position-x: center;
+    height: 194px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+.feedback-pic{
+    margin-bottom: 30px;
+}
+.feedback-text{
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+.italic{
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #222224;
+}
+.input-text{
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    color: #222224;
+    margin-bottom: 32px;
+}
+.subscribe{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+    color: #222224;
+}
+.form{
+    display: flex;
+}
+.useremail{
+    border: none;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #222224;
+    opacity: 0.67;
+    background: #E1E1E1;
+    border-radius: 25px 0 0 25px;
+    padding: 20px 80px 20px 30px;
+}
+.subbutton{
+    @include button;
+    background: $main-color;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 0 25px 25px 0;
+    padding: 20px 25px;
+    &:hover{
+        animation: color-change-2x 2s linear infinite alternate both;
+    }
+}
+
+ @keyframes color-change-2x {
+    0% {
+      background: $main-color;
+    }
+    50%{
+        background: #09ac2d;
+    }
+    100% {
+      background: #0609ad;
+    }
+  }
+  @media (max-width: 1100px) {
+    .feedback-wrap{
+        flex-direction: column;
+        width: 360px;
+    }
+    .feedback-col-2{
+        margin-top: 88px;
+    }
+}
+@media(max-width: 800px){
+    .feedback-text{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .input-text{
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .subscribe{
+        font-size: 24px;
+        line-height: 37px;
+    }
+    .useremail{
+        padding-right: 60px;
+    }
+}
+@media(max-width: 375px){
+    .feedback-wrap{
+        width: auto;
+    }
+}

@@ -1,0 +1,268 @@
+*{
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+summary::-webkit-details-marker{
+    display: none;
+}
+body{
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    flex-grow: 1;
+}
+.footer{
+    margin-top: a;
+}
+.hidden{
+    position:absolute;
+    left:-99999px;
+    width: 1px;
+    height: 1px;
+    margin:-1px;
+}
+
+/* variable */
+
+@import "blocks/variable";
+
+/* wrapper */
+
+.wrapper{
+    max-width: $wrapper;
+    margin: 0 auto;
+    padding: 16px;
+    box-sizing:content-box;
+}
+
+/*Header*/
+
+@import "blocks/header";
+
+/*promo*/
+
+@import "blocks/promo";
+
+/*categories*/
+
+@import "blocks/categories";
+
+/*products*/
+
+@import "blocks/products";
+
+/*feature*/
+
+@import "blocks/feature";
+
+/*feedback*/
+
+@import "blocks/feedback";
+
+/*footer*/
+
+@import "blocks/footer";
+
+/*breadcrump*/
+
+@import "blocks/breadcrump";
+
+/* goods */ 
+
+@import "blocks/goods";
+
+/* cart */ 
+
+@import "blocks/cart";
+
+/* registration */
+
+@import "blocks/registration";
+
+/*navigation*/
+
+.navigation-wrap{
+    padding-top: 37px;
+    padding-bottom: 49px;
+    display: flex;
+}
+.sort{
+    margin-left:30px;
+}
+.sort-details{
+    position: relative;
+}
+.details-heading{
+    display: block;
+}
+.sort-list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+.details-heading{
+    font-size: 14px;
+    line-height: 17px;  
+    color: #6F6E6E;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.sort-content{
+    position: absolute;
+    z-index: 100;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    width: 80px;
+}
+.sort-checkbox{
+    border: 1px solid #EBEBEB;
+    margin-right: 9.5px;
+}
+.sort-lable{
+    font-size: 14px;
+    line-height: 16px;
+    color: #6F6E6E;
+    margin: 7px;
+}
+
+//* Animation *//
+
+//* Pagination *// 
+.pagination {
+	display: flex;
+	justify-content: center;
+    margin-top: 48px;
+}
+
+.pagination-list {
+	list-style: none;
+	display: flex;
+    align-items: center;
+	gap: 17px;
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+	padding: 10px;
+}
+
+.pagination-item--separator {
+	margin: 0 -17px;
+	color: grey;
+}
+
+.pagination-link {
+    @include button;
+	color: #000;
+}
+.pagination-link--active {
+    color: $main-color;
+}
+
+/*filter*/
+
+.filter-details{
+    position: absolute;
+    z-index: 100;
+    margin-top: -10px;
+}
+.filter-details[open]{
+    background: #FFFFFF;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+.filter-details[open] .filter{
+    color: $main-color;
+    fill: $main-color;
+}
+.filter,
+.content-heading{
+    display: block;
+}
+.filter-media-icon{
+    width: 15px;
+}
+.filter{
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding: 15px;
+}
+.filter-content{
+    width: 300px;
+    background-color:#FFFFFF;
+    padding: 0 15px;
+}
+.filter-item,
+.category-list{
+    list-style-type: none;
+}
+.category-list{
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding-left: 11px;
+    margin: 24px 0 6px;
+}
+.filter-item{
+    margin-bottom: 18px;
+}
+.content-heading{
+    font-size: 14px;
+    line-height: 17px;
+    color: $main-color;
+    border-left: 5px solid $main-color;
+    border-bottom: 1px solid #EBEBEB;
+    padding: 11px;
+}
+.category-name{
+    font-size: 14px;
+    line-height: 17px;
+    color: #6F6E6E;
+}
+.category-btn{
+    @include button;
+}
+.position{
+    width: 360px;
+    position: relative;
+}
+@media (max-width: 768px){
+    .details-heading{
+        font-size: 10px;
+        line-height: 12px;
+    }
+}
+@media (max-width: 1170px){
+    .position{
+        max-width: 360px;
+    }
+    .navigation-wrap{
+        justify-content: space-between;
+    }
+    .navigation-wrap{
+        padding-bottom: 40px - $wrapper-padding;
+        padding-top: 24px;
+
+    }
+}
+@media (max-width: 400px){
+    .filter-media{
+        display: none;
+    }
+    .filter-media-icon{
+        width: 30px;
+    }
+    .filter{
+        padding-left: 0px;
+    }
+}

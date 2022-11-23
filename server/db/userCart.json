@@ -1,0 +1,13 @@
+{
+    "amount": 9000,
+    "countGoods": 3,
+    "contents": [
+        {
+            "quantity": 3,
+            "id_product": 12,
+            "product_name": "Black costume",
+            "price": 3000,
+            "img": "img/product-2.jpg"
+        }
+    ]
+}

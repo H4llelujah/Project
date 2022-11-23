@@ -1,0 +1,32 @@
+.feature{
+    background-color: rgb(0, 0, 0);
+    padding: 104px - $wrapper-padding 0;
+    color: #FFF;
+}
+.feature-wrap{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+.feature-heading{
+    font-weight: normal;
+    font-size: 19.96px;
+    line-height: 24px;
+    color: #FBFBFB;
+    margin: 25px 0 16px;
+}
+.feature-text{
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+    text-align: center;
+    color: #FBFBFB;
+}
+@media (max-width: 1100px) {
+    .feature-wrap{
+        flex-direction: column;
+        width: 360px;
+        gap: 46px;
+    }
+}

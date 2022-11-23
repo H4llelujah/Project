@@ -1,0 +1,11 @@
+$shift: 64px;
+$main-color: #F16D7F;
+@mixin button {
+    border: none;
+    background-color: transparent;
+    &:hover{
+        cursor: pointer;
+    }
+}
+$wrapper: 1140px;
+$wrapper-padding:16px;
