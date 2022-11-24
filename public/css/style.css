@@ -75,6 +75,21 @@ body {
   cursor: pointer;
 }
 
+.search-field {
+  width: 300px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-left: 20px;
+  color: white;
+  padding-left: 5px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+}
+
 .registry-link, .cart-link {
   text-decoration: none;
   color: #FFF;
